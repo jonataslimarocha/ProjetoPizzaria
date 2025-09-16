@@ -22,14 +22,14 @@
              background-size: cover;
              background-position: center;          
              padding: 20px 0;
-             position: relative;  /* Necessário para o posicionamento absoluto do botão */
+             position: relative;  
             
         }        
         header button {
              position: absolute;
-             right: 20%;   /* controla a distância da direita */
+             right: 20%;   
              top: 50%;     
-             transform: translateY(-40%); /* centraliza na vertical */
+             transform: translateY(-40%); 
         }
 
         nav {
@@ -38,12 +38,34 @@
             background-color: #074f2a;   
             padding: 10px 0 ;         
         }
-        nav a {
-            color: white;
-            font-family:"Times New Roman", Georgia, serif;
-            margin: 0 100px;
-            font-size: 20px;
-                }       
+       nav a {
+            color: white;             
+            text-decoration: none;    
+            font-size: 20px;          
+            margin: 0 60px;          
+             display: inline-block;    
+            transition: transform 0.2s, color 0.2s; 
+        }
+
+        nav a:hover {
+             transform: scale(1.2);    
+        color: #ffb703;           
+        }
+
+                
+        .botao-pedido svg {
+             width: 200px;
+             height: 100px;
+             transition: transform 0.2s, filter 0.2s;
+             cursor: pointer;
+             display: inline-block;
+             margin-right: 200px
+         }
+
+        .botao-pedido:hover svg {
+             transform: scale(1.1);
+            filter: brightness(1.2);
+        }
     </style>
   
 </head>
@@ -51,12 +73,15 @@
     <header> 
         <img src="assets/images/layouts/LOGO DOT COM - HORIZONTAL.png" 
         alt=" Pizzaria" style="height: 220px; width: auto;">
-        <a href="cardapio.html">
-              <button>
-            <img src="assets/images/layouts/BOTAO FAZER PEDIDO ESCRITO.png" 
-            alt="Fazer pedido" style="height: 100px; margin-right: 90px;width:auto; ">
-        </button>
-        </a>   
+      <a href="cardapio.html" class="botao-pedido">
+            <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" rx="25" ry="25" width="300" height="100" fill="#e63946" />
+            <text x="50%" y="55%" font-size="32" font-family="Arial, sans-serif" fill="white" 
+                  text-anchor="middle" dominant-baseline="middle">
+                  Fazer Pedido
+            </text>
+            </svg>
+       </a>
     </header>
     <nav>
         <a href="index.html">Home</a> 
