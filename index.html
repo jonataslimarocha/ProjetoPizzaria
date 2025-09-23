@@ -4,89 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DotComPizzaria</title>
-    <style>
-     
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #000000;
-        }
-        header {
-             display: flex ;
-             justify-content: space-between ;
-             align-items: center;
-             flex: 1 1 100vw;
-             height: 100px;
-             background-image: url("assets/images/layouts/Fundo.jpg.png");
-             background-size: cover;
-             background-position: center;          
-             padding: 20px 0;
-             position: relative;  
-            
-        }        
-        header button {
-             position: absolute;
-             right: 20%;   
-             top: 50%;     
-             transform: translateY(-40%); 
-        }
-
-        nav {
-            margin: 0;
-            text-align: center;
-            background-color: #074f2a;   
-            padding: 10px 0 ;         
-        }
-       nav a {
-            color: white;             
-            text-decoration: none;    
-            font-size: 20px;          
-            margin: 0 60px;          
-             display: inline-block;    
-            transition: transform 0.2s, color 0.2s; 
-        }
-
-        nav a:hover {
-             transform: scale(1.2);    
-        color: #ffb703;           
-        }
-
-                
-        .botao-pedido svg {
-             width: 200px;
-             height: 100px;
-             transition: transform 0.2s, filter 0.2s;
-             cursor: pointer;
-             display: inline-block;
-             margin-right: 200px
-         }
-
-        .botao-pedido:hover svg {
-             transform: scale(1.1);
-            filter: brightness(1.2);
-        }
-    </style>
+   <link rel="stylesheet" href="assets/css/global.css">
   
 </head>
 <body>
-    <header> 
+    <header class="fade-in"> 
         <img src="assets/images/layouts/LOGO DOT COM - HORIZONTAL.png" 
         alt=" Pizzaria" style="height: 220px; width: auto;">
-      <a href="cardapio.html" class="botao-pedido">
-            <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0" y="0" rx="25" ry="25" width="300" height="100" fill="#e63946" />
-            <text x="50%" y="55%" font-size="32" font-family="Arial, sans-serif" fill="white" 
-                  text-anchor="middle" dominant-baseline="middle">
-                  Fazer Pedido
-            </text>
-            </svg>
-       </a>
+        <a href="tamanho.html" class="botao-pedido">Fazer Pedido</a>
     </header>
-    <nav>
+    <nav class="fade-in delay-1">
         <a href="index.html">Home</a> 
         <a href="cardapio.html">Cardápio</a>        
     </nav>
-    
+   <main>
+    <section>
+        <h1 class="fade-in delay-3">Bem-vindo à DotComPizzaria!</h1>
+        <p class="fade-in delay-4">As melhores pizzas da cidade, feitas com os ingredientes mais frescos e amor em cada fatia. Venha provar!</p>
+        <img src="assets/images/pizza-principal.png" alt="Pizza de dar água na boca" class="fade-in delay-5">
+    </section>
+    </main>
+   <footer class="fade-in delay-2">
+    <div class="footer-container">
+        <div class="footer-column">
+            <img src="assets/images/layouts/LOGO DOT COM - HORIZONTAL.png" 
+            alt="Logo da DotComPizzaria" class="footer-logo">
+            <p>Entre em contato conosco!</p>
+            <p>Email: contato@dotcompizzaria.com</p>
+            <p>Telefone: (00) 1234-5678</p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Navegação</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Siga-nos</h4>
+            <div class="social-icons">
+                <a href="#"><img src="assets/images/icons/instagram.png" alt="Instagram"
+                    style="width: 30px; height: 30px;"></a>
+                <a href="#"><img src="assets/images/icons/face.png" alt="Facebook" style="width: 40px; height: 40px;"></a>
+                <a href="#"><img src="assets/images/icons/twitter.png" alt="Twitter" style="width: 40px; height: 40px;"></a>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h4>Receba novidades</h4>
+            <p>Assine nossa newsletter para promoções exclusivas!</p>
+            <form action="#">
+                <input type="email" placeholder="Seu email" required>
+                <button type="submit">Assinar</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 DotComPizzaria. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
 </body>
 </html>
