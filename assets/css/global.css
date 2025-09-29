@@ -236,3 +236,46 @@ footer {
     justify-content: flex-end;    
     width: 100%; 
 }
+/* Faixa inteira */
+.faixa {
+    display: flex;
+    justify-content: center;     /* centraliza os dois blocos */
+    align-items: center;         /* alinha verticalmente */
+    gap: 350px;                   /* espaço entre texto e pizza */
+    padding: 66px 50px;
+    
+}
+/* Fonte do titulo */
+@font-face {
+    font-family:'ahsing' ;
+    src: url(fonts/ahsing.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Bloco da estrela + frase */
+.texto {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    
+}
+
+.texto h2 {
+    color: #fff;
+    font-family: 'ahsing', Impact, sans-serif;
+    font-size: 90px;
+    margin: 50px;
+}
+
+.estrela {
+    width: 150px;                 /* ajuste o tamanho da estrela */
+    height: auto;
+}
+
+/* Pizza à direita */
+.pizza img {
+    width: 700px;                /* ajuste conforme necessário */
+    height: auto;
+}
