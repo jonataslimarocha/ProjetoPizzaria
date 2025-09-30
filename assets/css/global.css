@@ -236,16 +236,22 @@ footer {
     justify-content: flex-end;    
     width: 100%; 
 }
-/* Faixa inteira */
+
+.pizza:hover{
+    transform: scale(1.05); 
+    transition: transform 0.3s ease; 
+}
+
 .faixa {
     display: flex;
-    justify-content: center;     /* centraliza os dois blocos */
-    align-items: center;         /* alinha verticalmente */
-    gap: 350px;                   /* espaço entre texto e pizza */
-    padding: 66px 50px;
+    justify-content: center;     
+    align-items: center;        
+    gap: 50px;                   
+    padding: 50px 30px;
     
 }
-/* Fonte do titulo */
+
+
 @font-face {
     font-family:'ahsing' ;
     src: url(fonts/ahsing.otf) format('opentype');
@@ -254,7 +260,7 @@ footer {
 
 }
 
-/* Bloco da estrela + frase */
+
 .texto {
     display: flex;
     align-items: center;
@@ -265,17 +271,21 @@ footer {
 .texto h2 {
     color: #fff;
     font-family: 'ahsing', Impact, sans-serif;
-    font-size: 90px;
+    font-size: 60px;
     margin: 50px;
 }
 
 .estrela {
-    width: 150px;                 /* ajuste o tamanho da estrela */
+    width: 50px;               
     height: auto;
 }
+.estrela:hover {
+   transform: scale(1.15); 
+    transition: transform 0.3s ease; 
+}
 
-/* Pizza à direita */
+
 .pizza img {
-    width: 700px;                /* ajuste conforme necessário */
+    width: 500px;                
     height: auto;
 }
