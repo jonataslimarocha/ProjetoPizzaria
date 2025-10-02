@@ -4,40 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DotComPizzaria</title>
-   <link rel="stylesheet" href="assets/css/global.css">
-   
+   <link rel="stylesheet" href="assets/css/global.css">   
   
 </head>
-<body>
-   
+<body>   
     <header class="fade-in"> 
         <img src="assets/images/layouts/LOGO DOT COM - HORIZONTAL.png" 
-        alt=" Pizzaria" style="height: 220px; width: auto;">
-        <button id="btnAbrirLogin" class="botao-login">Login</button>
-        <a href="tamanho.html" class="botao-pedido">Fazer Pedido</a>
+        alt=" Pizzaria" style="height: 220px; width: auto;">   
+         <a href="index.html" class="botao-pedido">Voltar</a> 
     </header>
     <nav class="fade-in delay-1">
-        <a href="index.html">Home</a> 
-        <a href="cardapio.html">Cardápio</a> 
-        <a href="sobre.html">Sobre Nós</a> 
-        <a href="contato.html">Contato</a>               
+                            
     </nav>
-   <main class="main-fundo">
+   <main class="sobre-nos" >  
+    <div  >
+        <di class="modal-conteudo">
+            <h2>Mande sua Mensagem Digital</h2>
+             <form action="https://formspree.io/f/mayvovpb" method="POST" class="contact-form">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
 
-    <!-- ===== FAIXA COM ESTRELA + TEXTO + PIZZA ===== -->
-    <section class="faixa">
-        <div class="texto">
-            <img src="assets/images/ESTRELA DOS ENUNCIADOS.png" alt="estrela" class="estrela">
-            <h2>Venha comer a melhor pizza do Rio de Janeiro!</h2>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="_replyto" required>
+
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Enviar</button>
+            </form>
         </div>
+    </div>
 
-        <div class="pizza">
-            <img src="assets/images/pizzaria-grande.png"
-                 alt="Imagem de uma pizza deliciosa">
-        </div>
-    </section>
 
-</main>
+    </main>
    <footer class="fade-in delay-2">
     <div class="footer-container">
         <div class="footer-column">
@@ -54,7 +53,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="cardapio.html">Cardápio</a></li>
                 <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
         </div>
 
