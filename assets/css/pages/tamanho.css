@@ -1,0 +1,163 @@
+/* Sua fonte personalizada que já estava no arquivo */
+@font-face {
+    font-family:'Montserrat-Bold';
+    src: url(../../fonts/Montserrat-Bold.ttf) format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../../fonts/Montserrat-Regular.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-Italic';
+    src: url(../../fonts/Montserrat-Italic.ttf) format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+/* Container principal da seção */
+.faixa {
+    display: flex;
+    justify-content: space-around; /* Espaço entre as colunas */
+    align-items: center;
+    padding: 40px;
+    width: 100%;
+    max-width: 1200px; /* Limita a largura máxima para telas grandes */
+    margin: auto; /* Centraliza o container */
+}
+
+/* Coluna da esquerda (opções) */
+.coluna-opcoes {
+    width: 55%;
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+}
+
+.container-titulo {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaço entre a estrela e o texto */
+    margin-bottom: 25px;
+}
+
+.titulo-escolha {
+    font-family: 'Montserrat-bold', Impact, sans-serif;
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 0px; 
+}
+
+.estrela {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.estrela:hover {
+   transform: scale(1.15);
+}
+
+
+.opcao-pizza {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;    
+    border-bottom: 3px solid #6D4C25; 
+}
+
+
+.seletor-quantidade {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: #D32F2F solid 3px;    
+    border-radius: 30px;
+    padding: 8px;
+    margin-right: 25px;
+}
+
+.seletor-quantidade button {
+    background-color: #D32F2F; 
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 35px; 
+}
+
+.seletor-quantidade button:focus {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease; 
+}
+.seletor-quantidade input {
+    width: 45px;
+    text-align: center;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+
+.info-pizza h3 {
+    font-family: 'Montserrat', sans-serif; /* Use uma fonte mais legível aqui */
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #fff;
+    margin: 0 0 5px 0;
+}
+
+.info-pizza p {
+    color: #ccc;
+    margin: 0;
+    font-size: 1rem;
+}
+
+
+.container-botao {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 30px;
+}
+
+.btn-avancar {
+    background-color: #FFA500; 
+    color: #000;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-avancar:hover {
+    background-color: #FFC107; 
+}
+
+.coluna-imagem {
+    width: 40%;
+}
+
+.coluna-imagem img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.coluna-imagem img:hover {
+    transform: scale(1.05);
+}

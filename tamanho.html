@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DotComPizzaria</title>
    <link rel="stylesheet" href="assets/css/global.css">
+   <link rel="stylesheet" href="assets/css/pages/tamanho.css">
   
 </head>
 <body>
@@ -17,8 +18,60 @@
         <a href="index.html">Home</a> 
         <a href="cardapio.html">Cardápio</a>        
     </nav>
-    <main>
-        <h1>Tamanho</h1>
+   <main>
+    <section class="faixa">
+        <div class="coluna-opcoes">
+            <div class="container-titulo">
+                <img src="assets/images/ESTRELA DOS ENUNCIADOS.png" alt="estrela" class="estrela">
+                <h2 class="titulo-escolha">Escolha o Tamanho</h2>
+            </div>
+
+            <div class="opcao-pizza">
+                <div class="seletor-quantidade">
+                    <button>-</button>
+                    <input type="text" value="0" readonly>
+                    <button>+</button>
+                </div>
+                <div class="info-pizza">
+                    <h3>Pizza P - R$30,00</h3>
+                    <p>30 cm / 2 sabores</p>
+                </div>
+            </div>
+
+            <div class="opcao-pizza">
+                <div class="seletor-quantidade">
+                    <button id="diminui">-</button>
+                    <input type="text" value="0" readonly>
+                    <button id="btacrecenta">+</button>
+                </div>
+                <div class="info-pizza">
+                    <h3>Pizza M - R$53,00</h3>
+                    <p>45 cm / 2 sabores</p>
+                </div>
+            </div>
+
+            <div class="opcao-pizza">
+                <div class="seletor-quantidade">
+                    <button>-</button>
+                    <input type="text" value="1" readonly>
+                    <button>+</button>
+                </div>
+                <div class="info-pizza">
+                    <h3>Pizza G - R$67,00</h3>
+                    <p>60 cm / 3 sabores</p>
+                </div>
+            </div>
+            
+            <div class="container-botao">
+                <a href="#" class="btn-avancar">Avançar</a>
+            </div>
+
+            </div>
+
+            <div class="coluna-imagem">
+                <img src="assets/images/pizzaria-grande.png" alt="Imagem de uma pizza deliciosa">
+            </div>
+    </section>
     </main>
    <footer class="fade-in delay-2">
     <div class="footer-container">
