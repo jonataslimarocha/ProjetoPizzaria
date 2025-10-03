@@ -1,0 +1,86 @@
+.main-fundo{
+    background-color: rgba(20, 19, 19, 0.8); 
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.main-fundo h2 {
+    font-family: 'ahsing', Impact, sans-serif;
+    font-size: 40px;
+    color: #ff5722; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+.contato-conteudo{
+   background-color: #fefefe; 
+    margin: 10% auto; 
+    padding: 0px;
+    border: none; 
+    border-radius: 19px; 
+    width: 90%; 
+    max-width: 400px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);     
+    animation: zoomIn 0.3s ease-out;
+}
+@keyframes zoomIn {
+    from {transform: scale(0.9);}
+    to {transform: scale(1);}
+}
+.contato-conteudo form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+}
+
+.contato-conteudo label {
+    font-weight: bold;
+    color: #fffdfd;
+    margin-bottom: 5px;
+}
+.login-titulo {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Arial, Impact, sans-serif;
+     font-weight: bold;
+    color: #100505; 
+}
+
+.contato-conteudo input[type="name"],
+.contato-conteudo input[type="email"]
+ {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 12px;
+    transition: border-color 0.3s;
+}
+.contato-conteudo textarea[id="mensagem"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;;
+    font-size: 12px;
+    transition: border-color 0.3s;
+    resize: vertical; 
+    min-height: 100px; 
+}   
+
+.contato-conteudo input:focus {
+    border-color: #D32F2F; 
+    outline: none;
+}
+
+/* Estilizando o botão de Entrar */
+.contato-conteudo button[type="submit"] {
+    background-color: #D32F2F; 
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
