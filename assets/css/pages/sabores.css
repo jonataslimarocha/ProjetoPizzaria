@@ -1,0 +1,112 @@
+/* Container principal do cardápio */
+.titulo-principal, .titulo-categoria {
+    font-family: 'MedievalSharp', cursive; /* Mude de 'Cinzel' para 'MedievalSharp' */
+}
+body {
+    background-color: #000000; /* Fundo preto */
+    color: #ffffff; /* Cor do texto principal (branco) */
+    font-family: 'Montserrat', sans-serif; 
+    padding: 20px;
+}
+.cardapio {
+    max-width: 900px;
+    margin: 40px auto; 
+    padding: 20px;
+}
+
+/* Estilo do título principal "Escolha os sabores" */
+.titulo-principal {
+    font-family: 'Cinzel', serif; /* Fonte especial para os títulos */
+    font-size: 4rem; /* Tamanho grande da fonte */
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+/* Container que segura as duas colunas */
+.sabores-container {
+    display: flex; /* Habilita o layout flexível (para criar as colunas) */
+    justify-content: space-around; /* Distribui as colunas com espaço entre elas */
+    align-items: flex-start; /* Alinha as colunas no topo */
+    gap: 40px; /* Espaço entre as colunas */
+}
+
+/* Estilo de cada coluna (Salgadas e Doces) */
+.coluna-sabores {
+    width: 45%; /* Cada coluna ocupa 45% do espaço */
+}
+
+/* Estilo dos títulos de categoria "Salgadas" e "Doces" */
+.titulo-categoria {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+/* Remove os marcadores padrão da lista */
+.coluna-sabores ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilo de cada item da lista de sabores */
+.coluna-sabores li {
+    margin-bottom: 25px; /* Espaçamento entre os sabores */
+    padding-bottom: 15px; /* Espaçamento interno inferior */
+    border-bottom: 2px solid #333; /* Linha verde escura abaixo de cada sabor */
+    position: relative; /* Necessário para o ícone funcionar */
+    padding-left: 20px; /* Espaço à esquerda para o ícone */
+}
+
+/* Estilo do NOME de cada sabor (ex: Calabresa) */
+.coluna-sabores h3 {
+    font-size: 1.4rem;
+    margin: 0 0 5px 0;
+    font-weight: 700; /* Deixa o nome em negrito */
+}
+
+/* Estilo da DESCRIÇÃO de cada sabor */
+.coluna-sabores p {
+    font-size: 1rem;
+    color: #cccccc; /* Um branco um pouco mais escuro para a descrição */
+    margin: 0;
+}
+
+
+/* Ícone antes dos nomes dos sabores */
+.coluna-sabores li::before {
+    content: '■'; /* Usa um caractere de quadrado como ícone */
+    position: absolute; /* Posição exata */
+    left: 0;
+    top: 5px;
+    font-size: 1rem;
+}
+
+/* Cor específica para o ícone dos sabores SALGADOS */
+.sabor-salgado::before {
+    color: #3b8a45; /* Verde */
+}
+
+
+.sabor-doce::before {
+    color: #a33131; 
+}
+
+.titulo-principal {
+    position: relative; /* Necessário para posicionar a estrela */
+    display: inline-block; /* Faz o container se ajustar ao texto */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.titulo-principal::before {
+    content: '✦'; /* Código para uma estrela estilizada */
+    font-family: 'Arial', sans-serif; /* Usa uma fonte comum para a estrela */
+    position: absolute;
+    left: -60px; /* Posição à esquerda do título */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3.5rem;
+    color: #f0e68c; /* Cor de ouro pálido */
+}
