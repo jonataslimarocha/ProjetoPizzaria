@@ -1,16 +1,36 @@
-const acrescenta = document.getElementById('btacrecenta');
-const diminui = document.getElementById('diminui');
-const quantidadeInput = document.querySelector('.seletor-quantidade input');
 
-let quantidade = 0;
+const botoesAcrescenta = document.querySelectorAll('.btn-acrescenta');
+const botoesDiminui = document.querySelectorAll('.btn-diminui');
 
-acrescenta.onclick = function() {
-  quantidade++;
-  quantidadeInput.value = quantidade;
-}
-diminui.onclick = function() {
-  if (quantidade > 0) {
-    quantidade--;
-    quantidadeInput.value = quantidade;
-  }
-}
+
+botoesAcrescenta.forEach(botao => {
+  console.log("chegou1");
+   
+    botao.onclick = function() {
+        
+        const input = botao.parentElement.querySelector('.quantidade-input');    
+      
+        let quantidade = parseInt(input.value);       
+      
+        quantidade++;        
+       
+        input.value = quantidade;
+    }
+});
+
+
+botoesDiminui.forEach(botao => {
+    
+    botao.onclick = function() {
+        
+        const input = botao.parentElement.querySelector('.quantidade-input');        
+        
+        let quantidade = parseInt(input.value);        
+       
+        if (quantidade > 0) {
+            quantidade--;
+        }       
+      
+        input.value = quantidade;
+    }
+});
